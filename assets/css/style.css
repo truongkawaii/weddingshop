@@ -174,12 +174,31 @@
         display: flex;
         align-items: center;
         height: 100%;
+        padding: 1rem;
         justify-content: center;
     }
     
+    .member__center .heart {
+        box-shadow: 3px 3px 5px 3px rgba(68, 61, 61, 0.384);
+        border-radius: 5rem;
+        background-color: #D4AF38;
+    }
+    
     .member__center img {
-        border-radius: 2rem;
-        background-color: rgb(199, 241, 99);
+        padding: 1rem;
+    }
+    
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    .member__center img {
+        border-radius: 5rem;
+        background: none;
     }
     
     .member .member__right {
@@ -578,5 +597,14 @@
         .banner .banner__info .banner__title h2 {
             font-size: 8rem;
             white-space: nowrap;
+        }
+    }
+    
+    @media (max-width:767px) {
+        .humberger .line {
+            width: 2rem;
+            height: 3px;
+            margin-top: 5px;
+            background-color: black;
         }
     }
