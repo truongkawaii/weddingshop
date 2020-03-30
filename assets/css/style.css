@@ -53,6 +53,20 @@
     
     .header .header__menu .menu__nav .nav__item {
         padding: 1rem 2rem;
+        position: relative;
+    }
+    
+    .item--small li {
+        border-bottom: 1px solid rgb(112, 108, 108);
+        white-space: nowrap;
+        padding: 1rem;
+        color: white;
+        padding-right: 6rem;
+        padding-left: 2rem;
+    }
+    
+    .item--small li:hover {
+        background-color: #D4AF37;
     }
     
     .header .header__menu .menu__nav .nav__item a {
@@ -246,6 +260,41 @@
     
     .enwedding .row .enwedding__card {
         width: 25%;
+        position: relative;
+    }
+    
+    .overlay {
+        opacity: 0;
+        transition: 0.5s;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        transition: all ease-in 250ms;
+        height: 100%;
+        background-color: rgba(238, 238, 238, 0.37);
+        display: flex;
+    }
+    
+    .overlay:hover {
+        opacity: 1;
+    }
+    
+    .overlay:hover #img--overlay {
+        transform: translateY(0);
+        margin: auto;
+        transition: all ease-in 250ms;
+    }
+    
+    #img--overlay {
+        cursor: pointer;
+        transform: translateY(100%);
+        box-sizing: content-box;
+        padding: 1rem;
+        transition: all ease-in 250ms;
+        background-color: #D4AF37;
+        border-radius: 3rem;
+        width: 30px;
+        margin: auto;
     }
     
     .enwedding .row .enwedding__card img {
@@ -389,6 +438,19 @@
         .header {
             background-color: rgba(116, 112, 113, 0.356);
         }
+        .header .header__menu .menu__nav .nav__item:hover .item--small {
+            max-height: 100vh;
+            transform: translateY(0);
+        }
+        .item--small {
+            top: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.4s;
+            transform: translateY(20%);
+            position: absolute;
+            background-color: #595C66;
+        }
     }
     
     @media (max-width:991px) {
@@ -466,6 +528,25 @@
             padding: 0 1rem;
             right: 2rem;
             background-color: #D4AF37;
+        }
+        .item--small {
+            top: 100%;
+            left: 2rem;
+            position: relative;
+        }
+        .item--small li {
+            color: #C2C4C8;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(112, 108, 108, 0.49);
+        }
+        .header .header__menu .menu__nav .nav__item:hover .item--small {
+            max-height: 100vh;
+        }
+        .item--small {
+            top: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.7s;
         }
         /* // */
         .banner .banner__info .banner__img img {
