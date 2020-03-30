@@ -419,7 +419,21 @@
         color: white;
     }
     
+    .booking .booking__item {
+        display: flex;
+        align-items: center;
+    }
+    
+    .quote-square {
+        color: wheat;
+        background: #D4AF38;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        align-self: start;
+    }
+    
     .booking .booking__item p {
+        padding-left: 1.5rem;
         font-size: 2rem;
         color: white;
         font-family: 'Merriweather', serif;
@@ -598,6 +612,20 @@
             font-size: 8rem;
             white-space: nowrap;
         }
+    }
+    
+    .heart-circle {
+        margin: 0 auto;
+        font-size: 3rem;
+        color: white;
+        background: #D4AF37;
+        border-radius: 50%;
+        width: 7rem;
+        height: 7rem;
+        box-shadow: 0 0 5px 2px #3332, 0 0 15px 4px #3332, 0 0 20px 6px #3332, 0 0 40px 8px #3332;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     @media (max-width:767px) {
