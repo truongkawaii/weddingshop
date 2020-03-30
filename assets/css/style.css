@@ -1,0 +1,501 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    ul,
+    ol {
+        list-style: none;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .wrapper {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .header {
+        z-index: 999;
+        width: 100%;
+        position: fixed;
+    }
+    
+    .header .header__menu {
+        display: flex;
+        height: 100px;
+        position: relative;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-right: 5rem;
+    }
+    
+    .header .header__menu .menu__logo a {
+        white-space: nowrap;
+        font-size: 3.6rem;
+        color: white;
+        font-family: 'Mr De Haviland', cursive;
+    }
+    
+    .header .header__menu .menu__nav {
+        display: flex;
+        font-size: 1.5rem;
+    }
+    
+    .header .header__menu .menu__nav .nav__item {
+        padding: 1rem 2rem;
+    }
+    
+    .header .header__menu .menu__nav .nav__item a {
+        color: white;
+        font-weight: 600;
+    }
+    
+    .header .header__menu .menu__item--yellow {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 1rem;
+        right: 0;
+        background-color: #D4AF37;
+    }
+    
+    .owl-dots {
+        display: none;
+    }
+    
+    .header .header__menu .menu__item--yellow a {
+        font-size: 1.3rem;
+        color: white;
+    }
+    /* style banner */
+    
+    .banner {
+        height: 110vh;
+        background-image: url(../img/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .banner .container-fluid {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .banner .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .banner .banner__info .banner__img {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .banner .banner__info .banner__img img {
+        border-radius: 50%;
+    }
+    
+    .banner .banner__info .banner__title h2 {
+        font-size: 12rem;
+        font-family: 'Mr De Haviland', cursive;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .banner .banner__info .banner__title h2 span {
+        font-family: 'Mr De Haviland', cursive;
+        color: #D4AF37;
+    }
+    /* style member */
+    
+    .member {
+        padding: 10rem 0;
+    }
+    
+    .member .member__left {
+        display: flex;
+        padding-left: 10rem;
+    }
+    
+    .member .member--text {
+        text-align: center;
+        color: #626570;
+    }
+    
+    .member .member--text h5 {
+        font-size: 4.8rem;
+        font-family: 'Mr De Haviland', cursive;
+    }
+    
+    .member .member--text p {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+    
+    .member .member--text img {
+        width: 4rem;
+    }
+    
+    .member .member__left .left__list {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .member__center {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+    }
+    
+    .member__center img {
+        border-radius: 2rem;
+        background-color: rgb(199, 241, 99);
+    }
+    
+    .member .member__right {
+        display: flex;
+        padding-right: 10rem;
+    }
+    
+    .member .member__right .right__list {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .timelove {
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 0 -10%;
+        background-size: cover;
+        background-image: url(../img/4.jpg);
+    }
+    
+    .timelove {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .timelove .timelove__top {
+        color: white;
+    }
+    
+    .timelove .timelove__top p {
+        font-size: 3.1rem;
+        font-family: 'Merriweather', serif;
+        font-style: italic;
+        line-height: 1.4;
+    }
+    
+    .timelove .timelove__top h5 {
+        font-size: 1.4rem;
+        padding: 2rem 0;
+        font-family: 'Merriweather', serif;
+    }
+    
+    .timelove .timelove__top .timelove__top--yellow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    
+    .timelove .timelove__top .timelove__top--yellow .line {
+        width: 10rem;
+        height: 1px;
+        background-color: white;
+    }
+    
+    .timelove .timelove__top .timelove__top--yellow a {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+        font-family: 'Merriweather', serif;
+        color: #D2AE39;
+    }
+    
+    .timelove__top--timewhite {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .timelove__top--timewhite li h4 {
+        font-size: 4.8rem;
+        font-family: 'Merriweather', serif;
+    }
+    
+    .timelove__top--timewhite li h4:last-child {
+        font-size: 1.4rem;
+    }
+    
+    .enwedding .row .enwedding__card {
+        width: 25%;
+    }
+    
+    .enwedding .row .enwedding__card img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .timewedding {
+        padding: 8rem 0;
+        background: #F0F2F7;
+    }
+    
+    .timewedding .timewedding__top {
+        text-align: center;
+    }
+    
+    .timewedding .timewedding__top .timewedding__top--line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    
+    .timewedding .timewedding__top .timewedding__top--line h4 {
+        font-size: 1.4rem;
+        font-family: 'Merriweather', serif;
+        color: #D2AE39;
+    }
+    
+    .timewedding .timewedding__top .timewedding__top--line .line {
+        width: 10rem;
+        height: 1px;
+        background: #000;
+    }
+    
+    .timewedding .timewedding__top h6 {
+        font-size: 4.8rem;
+        font-family: 'Mr De Haviland', cursive;
+        color: #626570;
+        font-weight: 400;
+    }
+    
+    .timewedding .row {
+        padding-top: 5rem;
+    }
+    
+    .timewedding__card {
+        display: flex;
+        height: 100%;
+        padding-left: 6.5rem;
+        align-items: flex-start;
+        padding-top: 4rem;
+    }
+    
+    .timewedding__card .timewedding__component h1 {
+        font-size: 2rem;
+        color: #626570;
+        font-family: 'Merriweather', serif;
+        padding-bottom: 2rem;
+    }
+    
+    .timewedding__card .timewedding__component p {
+        font-size: 1.4rem;
+        color: #626570;
+        padding-bottom: 1.5rem;
+    }
+    
+    .timewedding__card .timewedding__component a {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+        color: white;
+        border-radius: 0.5rem;
+        background-color: #D4AF38;
+    }
+    
+    .right {
+        justify-content: flex-end;
+        text-align: right;
+        padding-left: 0;
+        padding-right: 6.5rem;
+    }
+    
+    .space-top {
+        padding-bottom: 8rem;
+    }
+    
+    .booking {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/bok.jpg);
+        height: 70vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .booking h1 {
+        font-family: 'Mr De Haviland', cursive;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 400;
+        padding: 4rem 0;
+        color: white;
+    }
+    
+    .booking .booking__item p {
+        font-size: 2rem;
+        color: white;
+        font-family: 'Merriweather', serif;
+        line-height: 1.5;
+    }
+    
+    .topfooter {
+        background-color: #626570;
+        text-align: center;
+        color: #D8D8DB;
+        padding: 8rem 0;
+        clear: left;
+    }
+    
+    .topfooter h1 {
+        font-size: 4rem;
+        font-weight: 400;
+        font-family: 'Mr De Haviland', cursive;
+    }
+    
+    .topfooter h1 span {
+        color: rgb(208, 172, 57);
+        font-family: 'Mr De Haviland', cursive;
+    }
+    
+    .lastfooter {
+        padding: 2rem 0;
+        text-align: center;
+        font-size: 1.4rem;
+        color: white;
+        background-color: #595C66;
+    }
+    
+    @media (min-width:992px) {
+        .header {
+            background-color: rgba(116, 112, 113, 0.356);
+        }
+    }
+    
+    @media (max-width:991px) {
+        html {
+            font-size: 58%;
+        }
+        .header {
+            color: #C2C4C8;
+            background-color: #FFFFFF;
+        }
+        .humberger {
+            position: absolute;
+            right: 120%;
+            color: #000;
+            top: 40%;
+            cursor: pointer;
+        }
+        .humberger .line {
+            width: 3rem;
+            height: 4px;
+            margin-top: 5px;
+            background-color: black;
+        }
+        .humberger:hover .line {
+            background-color: #D4AF37;
+        }
+        .header .header__menu {
+            height: 70px;
+            width: 100%;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        /* // */
+        .header .header__menu .menu__logo {
+            padding-top: 2rem;
+            padding-left: 5rem;
+        }
+        .header .header__menu .menu__logo a {
+            color: #C2C4C8;
+        }
+        .header .header__menu .menu__nav {
+            max-height: 0;
+            overflow: hidden;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            top: 100%;
+            left: 0;
+            transition: 0.5s;
+            position: absolute;
+            width: 100%;
+            flex-direction: column;
+        }
+        .header .header__menu .showmenu {
+            max-height: 100vh;
+            padding-bottom: 4rem;
+            padding-left: 4rem;
+        }
+        .header .header__menu .menu__nav .nav__item {
+            padding: 2rem 0 2rem 1rem;
+            margin-left: 2rem;
+            border-bottom: 1px solid rgb(172, 165, 165);
+        }
+        .header .header__menu .menu__nav .nav__item a {
+            color: #C2C4C8;
+        }
+        .header .header__menu .menu__item--yellow {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            right: 2rem;
+            background-color: #D4AF37;
+        }
+        /* // */
+        .banner .banner__info .banner__img img {
+            width: 200px;
+        }
+        .member .member__left {
+            padding-left: 0;
+        }
+        .member__center {
+            display: none;
+        }
+        .member .member__right {
+            padding-top: 2rem;
+            padding-right: 0;
+        }
+        .timelove .timelove__top p {
+            font-size: 2.5rem;
+        }
+        .timewedding__card {
+            padding-left: 0;
+        }
+        .right {
+            padding-right: 0;
+            padding-bottom: 5rem;
+        }
+        .space-top {
+            padding-bottom: 2rem;
+        }
+        .banner .banner__info .banner__title h2 {
+            font-size: 8rem;
+            white-space: nowrap;
+        }
+    }
